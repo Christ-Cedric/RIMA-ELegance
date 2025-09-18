@@ -1,7 +1,7 @@
 const navbar = document.querySelector('.nav-bar'); // prend le premier élément
 const menu = document.querySelector('.menu-toggle'); // prend le premier élément
 const navLinks = document.querySelectorAll('.nav-bar a'); // tous les liens dans la navbar
-
+const offre= document.querySelectorAll('#promotions button')
 // Toggle du menu
 menu.addEventListener('click', function() {
     navbar.classList.toggle('active'); 
@@ -11,5 +11,12 @@ menu.addEventListener('click', function() {
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navbar.classList.remove('active'); // on retire la classe active de la navbar
+  });
+});
+
+//notification sur les offre
+offre.forEach(button => {
+  button.addEventListener('click', function() {
+    alert('Offre non disponible');
   });
 });
