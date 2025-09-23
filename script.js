@@ -30,5 +30,22 @@ buttons.forEach(button => {
     window.open(waLink, '_blank');
   });
 });
+const form = document.getElementById('contact-form');
 
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const prenom = document.getElementById('prenom').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const subject = encodeURIComponent("Nouveau message du formulaire");
+    const body = encodeURIComponent(`Nom: ${name}\nPrénom: ${prenom}\nEmail: ${email}\nMessage: ${message}`);
+
+    // Ouvre le client mail avec mailto
+    window.location.href = `mailto:yameogocedric7@gmail.com?subject=${subject}&body=${body}`;
+
+    form.reset();
+});
 
