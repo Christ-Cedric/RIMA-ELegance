@@ -26,7 +26,7 @@ buttons.forEach(button => {
   button.addEventListener('click', () => {
     const productName = button.dataset.product; // ajoute data-product sur chaque bouton
     const productImg = button.dataset.img;     // ajoute data-img sur chaque bouton
-    const waLink = `https://wa.me/56640628?text=Je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20produit%20${encodeURIComponent(productName)}%20${encodeURIComponent(productImg)}`;
+    const waLink = `https://wa.me/65975297?text=Je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20produit%20${encodeURIComponent(productName)}%20${encodeURIComponent(productImg)}`;
     window.open(waLink, '_blank');
   });
 });
