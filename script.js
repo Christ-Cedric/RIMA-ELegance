@@ -44,7 +44,7 @@ form.addEventListener('submit', function(event) {
     const body = encodeURIComponent(`Nom: ${name}\nPrénom: ${prenom}\nEmail: ${email}\nMessage: ${message}`);
 
     // Ouvre le client mail avec mailto
-    window.location.href = `mailto:yameogocedric7@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:gracerouamba7@gmail.com?subject=${subject}&body=${body}`;
 
     form.reset();
 });
